@@ -7,11 +7,12 @@ function editContact(rowNumber) {
     document.getElementById('city').value = contactsArr[rowNumber].city;
     document.getElementById('addButton').innerHTML = 'EDIT';
     document.getElementById('user-header2').innerText = 'Edit contact';
-    /*document.getElementById('fNameLabel').style.visibility = 'hidden';
-    document.getElementById('lNameLabel').style.visibility = 'hidden';
+    document.getElementById('fnameLabel').style.visibility = 'hidden';
+    document.getElementById('lnameLabel').style.visibility = 'hidden';
     document.getElementById('phoneLabel').style.visibility = 'hidden';
     document.getElementById('addressLabel').style.visibility = 'hidden';
-    document.getElementById('cityLabel').style.visibility = 'hidden';*/
+    document.getElementById('postalCodeLabel').style.visibility = 'hidden';
+    document.getElementById('cityLabel').style.visibility = 'hidden';
     editForm = rowNumber;
 }
 
