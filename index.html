@@ -10,12 +10,15 @@
     <script src="apps.js"></script>
     <script src="storeContacts.js"></script>
     <script src="createCustomer.js"></script>
+    <script src="editContacts.js"></script>
+    <script src="deleteContact.js"></script>
 
 </head>
 
 <body onload="getContacts()">
 
 <h1 id="user-header" class="user"> User information:</h1>
+<h2 id="user-header2" class="user"> Add contact:</h2>
 <fieldset>
     <form id="formi">
         <tr>
@@ -63,6 +66,9 @@
         <th scope="col">Lastname</th>
         <th scope="col">Phone</th>
         <th scope="col">Address</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+
     </tr>
     <tbody id="customerTable" >
     </tbody>

@@ -1,3 +1,4 @@
+var editForm = -1;
 var contactsArr = [];
 var contacts = {
     firstName: '',
@@ -5,8 +6,9 @@ var contacts = {
     phoneNumber: '',
     address:'',
     postalcode:'',
-    city: ''
-}
+    city: '',
+    id: ''
+};
 
 function createCustomer() {
     //Create customer object
@@ -16,14 +18,15 @@ function createCustomer() {
     var address = document.getElementById("address").value;
     var city = document.getElementById("city").value;
     var postalCode = document.getElementById("postalCode").value;
-
+    var id = 0;
     return {
         firstName: fname,
         lastName: lname,
         phoneNumber: phone,
         city: city,
         postalCode: postalCode,
-        address: address
-    }
+        address: address,
+        id: id + 1
+    };
 
 }
